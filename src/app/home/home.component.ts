@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  slides:String[]=["/assets/paintings/slider-1.png",
-  "/assets/paintings/slider-2.png", 
- "/assets/paintings/slider-3.png"];
+  slides:String[]=["./assets/paintings/slider-1.png",
+  "./assets/paintings/slider-2.png", 
+ "./assets/paintings/slider-3.png"];
   constructor() { }
 
   ngOnInit(): void {
