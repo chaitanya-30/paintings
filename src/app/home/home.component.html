@@ -1,0 +1,40 @@
+<div class="container-fluid">
+    <div class="row">
+  <div class="col-md-12 col-sm-12">
+<ngb-carousel *ngIf="slides">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="slides[0]" alt="Random first slide">
+        <div class="box">
+          <p>Welcome to Prasuna's nature paintings.</p>
+        </div>
+     
+      </div>
+      
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="slides[1]" alt="Random second slide">
+        <div class="box">
+          <p>Welcome to Prasuna's nature paintings.</p>
+        </div>
+      </div>
+      
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="slides[2]" alt="Random third slide">
+        <div class="box">
+          <p>Welcome to Prasuna's nature paintings.</p>
+        </div>
+      </div>
+      
+    </ng-template>
+  </ngb-carousel>
+
+</div>
+
+
+    
+</div>
+</div>

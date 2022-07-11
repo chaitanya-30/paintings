@@ -1,0 +1,74 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  button{
+    outline: none;
+    border: none;
+    color: #fff3ff;
+  }
+:host mat-toolbar{
+    background:#212529;
+    width: 100%;
+    z-index: 100;
+}
+img{
+    width:100%;    background:#212529;
+    
+}
+
+ul{
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+ul li{
+  padding-top: 10px;
+  list-style: none;
+}
+
+.favcart button{
+    /* margin:5px; */
+    display: flex;
+    border: none;
+    outline: none;
+  
+    color: crimson;
+    background:#212529;
+    flex-direction: column;
+
+
+}
+.badge{
+  text-align: center;
+  height:20px;
+  width:15px;
+  background: #212529 !important;;
+  color:crimson;
+}
+.footer{
+
+  width: 96.4%;
+  position: absolute;
+  bottom: 0;
+ left: 2.7%;
+  padding:15px 0 0 0;
+  background: #212529 !important;
+  color: #fff;
+}
+
+@media (max-width: 575.98px) { 
+ ul{
+  margin-left: -20px;
+  
+ }
+ ul li{
+  margin:-5px;
+ }
+ .favcart button{
+  height: 120%;
+  padding-top: -20px;
+  margin-top: -5px;
+ }
+ }

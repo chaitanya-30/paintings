@@ -1,0 +1,31 @@
+<div class="container-fluid mt-5">
+    <h3>Welcome to Gallery</h3>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="imagecontainer">
+                <a class="position-relative"   *ngFor="let image of gallery">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src='{{image.img}}' alt="Card image cap">
+                    <div class="card-body ml-2">
+                      <div class="titleprice">
+                        <p>{{image.title}} --<span>{{image.price|currency:'₹'}}</span></p>
+                      </div>
+                     <div class="favcart">
+                      <button [ngStyle]="{'color':image.selected ? 'green' : 'crimson'}" (click)="addtowishlist(image)">
+                        <mat-icon>favorite</mat-icon></button>
+                      <button (click)="addtocart(image)"><mat-icon>shopping_cart</mat-icon></button>
+                    
+                     </div>
+                     
+                      
+                    </div>
+                  </div>
+           
+               </a>
+            </div>
+          
+           
+        </div>
+    </div>
+</div>
+ 

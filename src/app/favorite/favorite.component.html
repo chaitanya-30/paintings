@@ -1,0 +1,20 @@
+<h3  *ngIf="wishlisted.length">Your WishListed paintings</h3>
+<h3  *ngIf="!wishlisted.length">Your wishlisted is Empty</h3>
+<ul >
+    <li *ngFor="let image of wishlisted">
+      
+  <div class="card mb-3" style="width: 18rem;">
+    <img src='{{image.img}}' class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{image.title}}</h5>
+      <button (click)="addtocart(image)"><mat-icon>shopping_cart</mat-icon></button>
+    
+    <span class="text-danger mr-5">{{image.price|currency:'₹'}}</span>&nbsp;
+   
+    </div>
+  </div>
+        
+       
+    </li>
+    
+  </ul>

@@ -1,0 +1,42 @@
+<div class="container mt-5">
+    <div class="row">
+        <h2>CONTACT
+            US
+        </h2>
+        <div class="col-md-6 col-md-offset-6">
+            <form [formGroup]="contactForm">
+                
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" formControlName="name" id="name">
+                      </div>
+                      <div class="mb-3">
+                  <label for="email" class="form-label">Email address</label>
+                  <input type="email" class="form-control" formControlName="email" id="email" >
+                 
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="email" class="form-control" formControlName="phone" id="phone" >
+                   
+                  </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <input type="text-area" class="form-control" formControlName="message">
+                  </div>
+          
+                <button type="submit" class="btn btn-primary" [disabled]="!contactForm.valid" (click)="submit()">Submit</button>
+              </form>
+        </div>
+        <div class="col-md-6 col-md-offset-6 mt-5" >
+<div>
+    <p class="para">
+        Thank you for visiting our website.please send your details on given
+         form for any queries related to the purchase of painting.
+        We will contact you soon.
+        
+    </p>
+</div>
+        </div>
+    </div>
+</div>

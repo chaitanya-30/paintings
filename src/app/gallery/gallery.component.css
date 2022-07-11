@@ -1,0 +1,56 @@
+.imagecontainer{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.imagecontainer a{
+    text-decoration: none;
+}
+.img{
+    vertical-align: center;
+}
+h3{
+    text-align: center;
+    font-size: 2rem;
+    color: crimson;
+    margin-top: 10px;  
+}
+p{
+    text-decoration: none;
+    color:crimson;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+.titleprice{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+.card-body button{
+    margin:5px;
+    border: none;
+    outline: none;
+    /* margin-bottom: 5px; */
+    color: crimson;
+}
+.card{
+    border:none;
+    outline: none;
+}
+.card img{
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.card img:hover{
+    transform: scale(0.9);
+}
